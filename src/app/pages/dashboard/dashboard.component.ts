@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import { Chart, registerables } from 'chart.js';
 
 @Component({
   selector: 'app-dashboard',
@@ -7,9 +8,25 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DashboardComponent implements OnInit {
 
-  constructor() { }
+  constructor() {
+    Chart.register(...registerables);
+   }
 
-  ngOnInit(): void {
+  @ViewChild("meuCanvas", { static: true }) elemento : ElementRef;
+
+  ngOnInit(){
+    new Chart(this.elemento.nativeElement, {
+      type: 'line',
+      data: {
+        labels: ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"],
+        datasets: [
+          {
+            data: [85, 72, 86, 81, 84, 86, 94, 60, 62, 65, 41, 58]
+          }
+        ]
+      }
+    });
+
   }
 
 }
