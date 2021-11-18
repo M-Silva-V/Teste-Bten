@@ -1,3 +1,12 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
 .example-form {
   min-width: 150px;
   max-width: 500px;
@@ -10,8 +19,6 @@
 
 .example-card {
   max-width: 400px;
-  margin: auto;
-  margin-top: 50px;
 }
 
 section {
