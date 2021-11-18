@@ -7,30 +7,30 @@
           <mat-label>Nome</mat-label>
           <input type="text" [(ngModel)]="informacao.name" matInput [formControl]="nameFormControl" placeholder="Nome Completo">
           <mat-error *ngIf="!nameFormControl.hasError('required')">
-            Por favor informe o nome completo!
+            Please enter a name complete!
           </mat-error>
           <mat-error *ngIf="nameFormControl.hasError('required')">
-            Nome é <strong>requirido</strong>
+            Name is <strong>required</strong>
           </mat-error>
         </mat-form-field>
         <mat-form-field class="example-full-width" appearance="fill">
           <mat-label>Email</mat-label>
           <input type="email" [(ngModel)]="informacao.email" matInput [formControl]="emailFormControl" placeholder="Ex. pat@example.com">
           <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
-            Por favor informe um email válido!
+            Please enter a valid email address!
           </mat-error>
           <mat-error *ngIf="emailFormControl.hasError('required')">
-            Email é <strong>requirido</strong>
+            Email is <strong>required</strong>
           </mat-error>
         </mat-form-field>
         <mat-form-field class="example-full-width" appearance="fill">
           <mat-label>Senha</mat-label>
           <input type="password" [(ngModel)]="informacao.password" matInput [formControl]="passwordFormControl" placeholder="******">
           <mat-error *ngIf="!passwordFormControl.hasError('required')">
-            Por favor informe uma senha válida!
+            Please enter a valid password!
           </mat-error>
           <mat-error *ngIf="passwordFormControl.hasError('required')">
-            Senha é <strong>requirida</strong>
+            Senha is <strong>required</strong>
           </mat-error>
         </mat-form-field>
         <section>

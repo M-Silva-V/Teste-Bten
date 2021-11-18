@@ -1,33 +1,94 @@
 <mat-sidenav-container class="example-container">
   <mat-sidenav class="sidebar" mode="side" opened>
     <mat-nav-list>
-
       <mat-list-item class="parent">
         <span class="full-width">Overview</span>
         <mat-icon mat-list-icon>home</mat-icon>
       </mat-list-item>
 
       <mat-list-item class="parent">
-        <span class="full-width">Overview</span>
-        <mat-icon mat-list-icon>home</mat-icon>
+        <span class="full-width">Tickets</span>
+        <mat-icon mat-list-icon>label</mat-icon>
       </mat-list-item>
 
       <mat-list-item class="parent">
-        <span class="full-width">Overview</span>
-        <mat-icon mat-list-icon>home</mat-icon>
+        <span class="full-width">Ideas</span>
+        <mat-icon mat-list-icon>perm_device_information</mat-icon>
       </mat-list-item>
 
+      <mat-list-item class="parent">
+        <span class="full-width">Contacts</span>
+        <mat-icon mat-list-icon>account_box</mat-icon>
+      </mat-list-item>
     </mat-nav-list>
     </mat-sidenav>
     <mat-sidenav-content>
-    <mat-card class="graphic-card">
-      <mat-card-title>Today's trends</mat-card-title>
-      <mat-card-content>
-        <div>
-          <canvas #meuCanvas></canvas>
-        </div>
-      </mat-card-content>
-    </mat-card>
+
+    <div class="cards">
+      <mat-card class="example-card">
+        <mat-card-title-group>
+          <mat-card-title>Unresolved</mat-card-title>
+          <mat-card-subtitle>60</mat-card-subtitle>
+          <img mat-card-sm-image src="https://icon-library.com/images/up-icon/up-icon-0.jpg" >
+        </mat-card-title-group>
+      </mat-card>
+
+      <mat-card class="example-card">
+        <mat-card-title-group>
+          <mat-card-title>Overdue</mat-card-title>
+          <mat-card-subtitle>16</mat-card-subtitle>
+          <img mat-card-sm-image src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5FJbkT29SFKNvbkYj3VEui_4yYg6phqG84A&usqp=CAU" >
+        </mat-card-title-group>
+      </mat-card>
+
+      <mat-card class="example-card">
+        <mat-card-title-group>
+          <mat-card-title>Open</mat-card-title>
+          <mat-card-subtitle>43</mat-card-subtitle>
+          <img mat-card-sm-image src="https://icon-library.com/images/door-icon-png/door-icon-png-15.jpg" >
+        </mat-card-title-group>
+      </mat-card>
+
+      <mat-card class="example-card">
+        <mat-card-title-group>
+          <mat-card-title>On hold</mat-card-title>
+          <mat-card-subtitle>64</mat-card-subtitle>
+          <img mat-card-sm-image src="https://icon-library.com/images/social-people-icon/social-people-icon-5.jpg" >
+        </mat-card-title-group>
+      </mat-card>
+    </div>
+
+    <div class="cards side">
+      <mat-card class="graphic-card">
+        <mat-card-title>Today's trends</mat-card-title>
+        <mat-card-content>
+          <div>
+            <canvas #meuCanvas></canvas>
+          </div>
+        </mat-card-content>
+      </mat-card>
+      <div class="side-cards">
+        <mat-card class="example-card">
+          <mat-card-title-group>
+            <mat-card-title>Resolved</mat-card-title>
+            <mat-card-subtitle>429</mat-card-subtitle>
+          </mat-card-title-group>
+        </mat-card>
+        <mat-card class="example-card">
+          <mat-card-title-group>
+            <mat-card-title>Received</mat-card-title>
+            <mat-card-subtitle>426</mat-card-subtitle>
+          </mat-card-title-group>
+        </mat-card>
+        <mat-card class="example-card">
+          <mat-card-title-group>
+            <mat-card-title>Average Response Time</mat-card-title>
+            <mat-card-subtitle>3h 8m</mat-card-subtitle>
+          </mat-card-title-group>
+        </mat-card>
+      </div>
+    </div>
+
   </mat-sidenav-content>
 </mat-sidenav-container>
 

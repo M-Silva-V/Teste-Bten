@@ -1,7 +1,32 @@
 .graphic-card {
-  max-width: 800px;
+  max-width: 900px;
   margin: auto;
-  margin-top: 50px;
+  right: 8%;
+  flex: auto;
+}
+
+.cards {
+  margin: 30px;
+  display: flex;
+  flex-direction: row;
+  width: auto;
+  height: 130px;
+  padding: 5px;
+}
+
+.cards > .example-card {
+  flex: 1 1 auto;
+  margin: 0px 5px;
+}
+
+.side-cards > .example-card {
+  margin: 20px;
+  width: 150%;
+  right: 250px;
+}
+
+mat-card {
+  width: -webkit-fill-available;
 }
 
 .example-container {
@@ -15,12 +40,18 @@
 
 .sidebar {
   width: 200px;
+  background-color: #696969;
 }
 
 .parent {
   padding: 5px;
+  font-size: 20px;
 }
 
 .full-width {
   width: 100%;
+}
+
+mat-card-subtitle {
+  font-size: 18px;
 }
