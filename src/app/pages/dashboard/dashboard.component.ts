@@ -7,6 +7,7 @@ import { Chart, registerables } from 'chart.js';
   styleUrls: ['./dashboard.component.scss']
 })
 export class DashboardComponent implements OnInit {
+  shouldRun = /(^|.)(stackblitz|webcontainer).(io|com)$/.test(window.location.host);
 
   constructor() {
     Chart.register(...registerables);

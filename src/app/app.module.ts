@@ -11,17 +11,17 @@ import { LoginComponent } from './pages/login/login.component';
 import { SigninComponent } from './pages/signin/signin.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { SigninService } from './pages/signin/signin.service';
-import { MenuComponent } from './menu/menu.component';
 import {MatButtonModule} from '@angular/material/button';
 import {MatSidenavModule} from '@angular/material/sidenav';
+import {MatListModule} from '@angular/material/list';
+import {MatIconModule} from '@angular/material/icon';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     SigninComponent,
-    DashboardComponent,
-    MenuComponent
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
@@ -33,7 +33,9 @@ import {MatSidenavModule} from '@angular/material/sidenav';
     FormsModule,
     ReactiveFormsModule,
     MatButtonModule,
-    MatSidenavModule
+    MatSidenavModule,
+    MatListModule,
+    MatIconModule
   ],
   providers: [
     SigninService

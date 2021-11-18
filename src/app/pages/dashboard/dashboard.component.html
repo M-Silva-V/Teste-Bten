@@ -1,12 +1,35 @@
-<app-menu></app-menu>
+<mat-sidenav-container class="example-container">
+  <mat-sidenav class="sidebar" mode="side" opened>
+    <mat-nav-list>
 
-<mat-card class="graphic-card">
-  <mat-card-title>Today's trends</mat-card-title>
-  <mat-card-content>
-    <div>
-      <canvas #meuCanvas></canvas>
-    </div>
-  </mat-card-content>
-</mat-card>
+      <mat-list-item class="parent">
+        <span class="full-width">Overview</span>
+        <mat-icon mat-list-icon>home</mat-icon>
+      </mat-list-item>
+
+      <mat-list-item class="parent">
+        <span class="full-width">Overview</span>
+        <mat-icon mat-list-icon>home</mat-icon>
+      </mat-list-item>
+
+      <mat-list-item class="parent">
+        <span class="full-width">Overview</span>
+        <mat-icon mat-list-icon>home</mat-icon>
+      </mat-list-item>
+
+    </mat-nav-list>
+    </mat-sidenav>
+    <mat-sidenav-content>
+    <mat-card class="graphic-card">
+      <mat-card-title>Today's trends</mat-card-title>
+      <mat-card-content>
+        <div>
+          <canvas #meuCanvas></canvas>
+        </div>
+      </mat-card-content>
+    </mat-card>
+  </mat-sidenav-content>
+</mat-sidenav-container>
+
 
 

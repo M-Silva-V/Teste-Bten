@@ -3,3 +3,24 @@
   margin: auto;
   margin-top: 50px;
 }
+
+.example-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #eee;
+}
+
+.sidebar {
+  width: 200px;
+}
+
+.parent {
+  padding: 5px;
+}
+
+.full-width {
+  width: 100%;
+}
